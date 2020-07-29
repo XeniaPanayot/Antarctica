@@ -1,0 +1,39 @@
+/* GENERAL STYLES */
+body {
+    min-width: 1366px;
+
+    padding: 0;
+    margin: 0;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #011C40;
+    
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: #003872;
+
+    background-image: url("../img/bg-1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
