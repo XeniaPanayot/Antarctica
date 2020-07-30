@@ -21,10 +21,8 @@
 /* GENERAL STYLES */
 body {
     min-width: 1366px;
-
     padding: 0;
     margin: 0;
-
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -111,7 +109,6 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-
     padding-top: 35px;
 }
 
@@ -150,7 +147,6 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -164,7 +160,6 @@ h4 {
     background-image: url("../img/bg-2.png");
     background-repeat: no-repeat;
     background-size: cover;
-
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -174,7 +169,6 @@ h4 {
 .advantages__list {
     display: flex;
     flex-wrap: wrap;
-
     margin-right: -40px;
 }
 .advantages__item {
@@ -184,7 +178,6 @@ h4 {
     flex-direction: column;
     background-color: #F9FBFD;
     box-sizing: border-box;
-    
     padding: 87px 30px 30px 30px;
     margin-right: 40px;
 }
@@ -237,7 +230,21 @@ h4 {
     /*height: 386px;*/
     margin: 15px;
 }
+.gallery__item figure {
+    position: relative;
+}
+.gallery__item figcaption {
+    position: absolute;
+    top: 320px;
+    left: 30px;
+    color: #F9FBFD;
+    z-index: 1;
+}
+
+/* Text in .gallery */
 .gallery__description {
+    position: absolute;
+    top: 0;
     width: 260px;
     display: flex;
     flex-direction: column;
@@ -245,6 +252,9 @@ h4 {
     color: #F9FBFD;
     box-sizing: border-box;
     padding: 35px 25px 35px 25px;
+    z-index: 2;
+
+    display: none;
 }
 .gallery__description h3,
 .gallery__description h4,
@@ -256,8 +266,193 @@ h4 {
     font-size: 14px;
     line-height:  20px;
     color: #D8D8D9;
-
     padding-bottom: 20px;
 }
 
+/* Text on:hover*/
+.gallery__item:hover .gallery__description {
+    display: flex;
+}
+
+/* Booking */
+.booking {
+    background-image: url("../img/bg-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.booking__wrapper {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding-left: 60px;
+   padding-right: 60px;
+
+}
+.booking__promo {
+    width: 560px;
+}
+
+/* Booking FORM */
+.booking__data {
+    width: 403px;
+}
+.booking-form {
+    background-color: #011C40;
+    padding: 50px;
+}
+.booking-form fieldset {
+    display: flex;
+    padding: 0;
+    border: none;
+    flex-direction: column;
+}
+.booking-form legend {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F9FBFD;
+    padding-bottom: 35px;
+}
+.booking-form label {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    color: #F9FBFD;
+}
+
+/* FORM Inputs*/
+.booking-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+.booking-form input::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #011C40;
+}
+.booking-form button {
+    width: 100%;
+}
+
+/* Checkbox */
+.booking-form__personal-data label {
+    position: relative;
+    text-align: left;
+    margin-left: 16px;
+}
+/*-- customized box--*/
+.booking-form__personal-data label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+  }
+   
+/*--- customized tick */
+.booking-form__personal-data label::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    display: inline-block;
+    height: 5px;
+    width: 8px;
+    border-left: 1px solid #101A56;;
+    border-bottom: 1px solid #101A56;;
+    transform: rotate(-45deg);
+  }
+
+input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0
+}/* hides original checkbox */
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+  }/*Unhide the checkmark by default*/
+
+input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+  } /*Adding Chrome-like focus on the fake checkbox*/
+
+
+/* CONTACTS */
+.contacts {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts__map {
+    width: 560px;
+}
+.contacts__details {
+    width: 500px;
+}
+.contacts__details a {
+    position: relative;
+
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #011C40;
+    margin-left: 30px;
+}
+
+a[href^="https"]::before {
+    position: absolute;
+    content: "";
+    left: -25px;
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/pin-icon.svg");
+    background-repeat: no-repeat;
+}
+a[href^="tel:"]::before {
+    position: absolute;
+    content: "";
+    left: -25px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: #011C40;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main-footer__nav {
+    display: flex;
+}
+/* .site-menu is styled in Header  */
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-left: auto;
+}
+.social__item {
+    margin-left: 33px;
+}
 
