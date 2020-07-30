@@ -112,6 +112,7 @@ h4 {
     padding-top: 35px;
 }
 
+
 .site-menu {
     display: flex;
     flex-wrap: wrap;
@@ -226,14 +227,14 @@ h4 {
     flex-wrap: wrap;
 }
 .gallery__item {
+    position: relative;
     width: 260px;
-    /*height: 386px;*/
+    height: 386px;
+    background-color: #7798C4;
     margin: 15px;
 }
-.gallery__item figure {
-    position: relative;
-}
-.gallery__item figcaption {
+
+.gallery__item > h3 {
     position: absolute;
     top: 320px;
     left: 30px;
