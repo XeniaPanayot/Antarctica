@@ -3,19 +3,22 @@
     font-weight: normal;
     font-family: "Montserrat";
     font-style: normal;
-    src: url("../fonts/montserrat-medium.woff2 ") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+    src: local("Montserrat"), url("../fonts/montserrat-medium.woff2 ") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+    font-display: swap;
 }
 @font-face {
     font-weight: bold;
     font-family: "Montserrat";
     font-style: normal;
-    src: url("../fonts/montserrat-semibold.woff2 ") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+    src: local("Montserrat"), url("../fonts/montserrat-semibold.woff2 ") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+    font-display: swap;
 }
 @font-face {
     font-weight: lighter;
     font-family: "Montserrat";
     font-style: normal;
-    src: url("../fonts/montserrat-light.woff2 ") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+    src: local("Montserrat"), url("../fonts/montserrat-light.woff2 ") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+    font-display: swap;
 }
 
 /* GENERAL STYLES */
@@ -28,7 +31,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    color: #011C40;  
+    color: #011c40;  
 }
 /*ul {
     margin: 0;
@@ -55,7 +58,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: #011C40;
+    color: #011c40;
     text-decoration: none;
     text-align: center;
     background-color: #f9fbfd;
@@ -134,7 +137,7 @@ body {
     font-weight: 600;
     font-size: 28px;
     line-height: 42px;
-    color: #011C40;
+    color: #011c40;
 }
 .lead-in__text {
     width: 512px;
@@ -142,7 +145,7 @@ body {
 
 /* Advantages */
 .advantages {
-    border-color: #E3ECF6;
+    border-color: #e3ecf6;
     background-image: url("../img/bg-2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +165,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    color: #011C40;
+    color: #011c40;
 }
 .advantages__list {
     display: flex;
@@ -182,36 +185,27 @@ body {
     padding: 87px 30px 30px 30px;
     margin-right: 40px;
 }
-
-.advantages__item--ship::before {
+.advantages__item::before {
     position: absolute;
     top: 50px;
-
     content: "";
+    background-repeat: no-repeat;
+}
+
+.advantages__item--ship::before {
     width: 27px;
     height: 32px;
     background-image: url("../img/ship-icon.svg");
-    background-repeat: no-repeat;
 }
 .advantages__item--allincl::before {
-    position: absolute;
-    top: 50px;
-
-    content: "";
     width: 38px;
     height: 21px;
     background-image: url("../img/ticks-icon.svg");
-    background-repeat: no-repeat;
 }
 .advantages__item--zodiac::before {
-    position: absolute;
-    top: 50px;
-
-    content: "";
     width: 42px;
     height: 15px;
     background-image: url("../img/zodiac-icon.svg");
-    background-repeat: no-repeat;
 }
 
 /* Gallery */
@@ -238,7 +232,7 @@ body {
     position: relative;
     width: 260px;
     height: 386px;
-    background-color: #7798C4;
+    background-color: #7798c4;
     margin: 15px;
 }
 
@@ -261,7 +255,7 @@ body {
     width: 260px;
     display: flex;
     flex-direction: column;
-    background-color: #011C40;
+    background-color: #011c40;
     color: #f9fbfd;
     box-sizing: border-box;
     padding: 35px 25px 35px 25px;
@@ -289,7 +283,7 @@ body {
 .gallery__description p {
     font-size: 14px;
     line-height:  20px;
-    color: #D8D8D9;
+    color: #d8d8d9;
     margin: 0;
     padding-bottom: 20px;
 }
@@ -331,7 +325,7 @@ body {
     width: 403px;
 }
 .booking-form {
-    background-color: #011C40;
+    background-color: #011c40;
     padding: 50px;
 }
 .booking-form fieldset {
@@ -365,7 +359,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #011C40;
+    color: #011c40;
 }
 .booking-form button {
     width: 100%;
@@ -384,6 +378,7 @@ body {
     top: 0;
     left: -20px;
     display: inline-block;
+    vertical-align: middle;
     height: 18px;
     width: 18px;
     background-color: #ffffff;
@@ -396,6 +391,7 @@ body {
     top: 3px;
     left: -15px;
     display: inline-block;
+    vertical-align: middle;
     height: 5px;
     width: 8px;
     border-left: 1px solid #101A56;;
@@ -403,20 +399,20 @@ body {
     transform: rotate(-45deg);
   }
 
-input[type="checkbox"] {
+.booking-form input[type="checkbox"] {
     width: 0;
     height: 0;
     opacity: 0
 }/* hides original checkbox */
 
-input[type="checkbox"] + label::after {
+.booking-form input[type="checkbox"] + label::after {
     content: none;
 }
-input[type="checkbox"]:checked + label::after {
+.booking-form input[type="checkbox"]:checked + label::after {
     content: "";
   }/*Unhide the checkmark by default*/
 
-input[type="checkbox"]:focus + label::before {
+.booking-form input[type="checkbox"]:focus + label::before {
     outline: rgb(59, 153, 252) auto 5px;
   } /*Adding Chrome-like focus on the fake checkbox*/
 
@@ -443,7 +439,7 @@ input[type="checkbox"]:focus + label::before {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    color: #011C40;
+    color: #011c40;
 }
 .contacts__details a {
     position: relative;
@@ -454,11 +450,11 @@ input[type="checkbox"]:focus + label::before {
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: #011C40;
+    color: #011c40;
     margin-left: 30px;
 }
 
-a[href^="https"]::before {
+.contacts__details a[href^="https"]::before {
     position: absolute;
     content: "";
     left: -25px;
@@ -467,7 +463,7 @@ a[href^="https"]::before {
     background-image: url("../img/pin-icon.svg");
     background-repeat: no-repeat;
 }
-a[href^="tel:"]::before {
+.contacts__details a[href^="tel:"]::before {
     position: absolute;
     content: "";
     left: -25px;
@@ -479,7 +475,7 @@ a[href^="tel:"]::before {
 
 /* FOOTER */
 .main-footer {
-    background-color: #011C40;
+    background-color: #011c40;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -498,6 +494,43 @@ a[href^="tel:"]::before {
     margin-left: auto;
 }
 .social__item {
+    position: relative;
     margin-left: 33px;
 }
+.social__link {
+    position: relative;
+}
+.social__link::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+}
+.social__link--fb::before {
+    background-image: url("../img/fb.svg");
+    width: 11px;
+    height: 20px;
+    top: 0;
+    left: 0;
+}
+.social__link--insta::before {
+    background-image: url("../img/insta.svg");
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+}
+.social__link--twitter::before {
+    background-image: url("../img/twitter.svg");
+    width: 20px;
+    height: 16px;
+    top: 5px;
+    left: 10px;
+}
+
+
+.social__link:focus::before {
+    outline:  rgb(59, 153, 252) auto 5px;
+  } /*Adding  focus outline on the pseudoelement*/
+
+
 
