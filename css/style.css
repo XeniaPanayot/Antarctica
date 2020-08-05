@@ -30,11 +30,11 @@ body {
     line-height: 20px;
     color: #011C40;  
 }
-ul {
+/*ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
+}*/
 
 .visually-hidden {
     position: absolute;
@@ -58,38 +58,8 @@ ul {
     color: #011C40;
     text-decoration: none;
     text-align: center;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
     padding: 15px;
-}
-
-/* h1-h6 */
-h1 {
-    font-weight: bold;
-    font-size: 54px;
-    line-height: 66px;
-    color: #F9FBFD;
-}
-h2 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    color: #011C40;
-}
-
-h3 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #011C40;
-}
-h4 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #F9FBFD;
 }
 
 /* HEADER */
@@ -115,6 +85,9 @@ h4 {
 
 .site-menu {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
@@ -128,7 +101,7 @@ h4 {
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
-    color: #F9FBFD;
+    color: #f9fbfd;
 }
 
 /* Intro */
@@ -136,12 +109,17 @@ h4 {
     padding-top: 210px;
     padding-bottom: 283px;
 }
-.intro h1,
-.intro p {
+
+.intro h2 {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 66px;
+    color: #f9fbfd; 
     text-align: center;
 }
 .intro p {
     font-size: 20px;
+    text-align: center;
 }
 /* Lead-in */
 .lead-in__wrapper {
@@ -150,6 +128,13 @@ h4 {
     align-items: center;
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.lead-in h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #011C40;
 }
 .lead-in__text {
     width: 512px;
@@ -165,10 +150,25 @@ h4 {
     padding-bottom: 120px;
 }
 .advantages h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #011c40;
     text-align: center;
+}
+.advantages h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #011C40;
 }
 .advantages__list {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     flex-wrap: wrap;
     margin-right: -40px;
 }
@@ -177,7 +177,7 @@ h4 {
     width: 360px;
     display: flex;
     flex-direction: column;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
     box-sizing: border-box;
     padding: 87px 30px 30px 30px;
     margin-right: 40px;
@@ -220,10 +220,18 @@ h4 {
     padding-bottom: 120px;
 }
 .gallery h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #011c40;
     text-align: center;
 }
 .gallery__list {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     flex-wrap: wrap;
 }
 .gallery__item {
@@ -238,7 +246,11 @@ h4 {
     position: absolute;
     top: 320px;
     left: 30px;
-    color: #F9FBFD;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #f9fbfd;
     z-index: 1;
 }
 
@@ -250,23 +262,35 @@ h4 {
     display: flex;
     flex-direction: column;
     background-color: #011C40;
-    color: #F9FBFD;
+    color: #f9fbfd;
     box-sizing: border-box;
     padding: 35px 25px 35px 25px;
     z-index: 2;
 
     display: none;
 }
-.gallery__description h3,
-.gallery__description h4,
-.gallery__description p {
-    color: #F9FBFD;
+.gallery__description h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #f9fbfd;
+    margin: 0;
+}
+
+.gallery__description h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #f9fbfd;
     margin: 0;
 }
 .gallery__description p {
     font-size: 14px;
     line-height:  20px;
     color: #D8D8D9;
+    margin: 0;
     padding-bottom: 20px;
 }
 
@@ -294,6 +318,13 @@ h4 {
 .booking__promo {
     width: 560px;
 }
+.booking h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #011c40;
+}
 
 /* Booking FORM */
 .booking__data {
@@ -313,14 +344,14 @@ h4 {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    color: #F9FBFD;
+    color: #f9fbfd;
     padding-bottom: 35px;
 }
 .booking-form label {
     font-weight: normal;
     font-size: 10px;
     line-height: 13px;
-    color: #F9FBFD;
+    color: #f9fbfd;
 }
 
 /* FORM Inputs*/
@@ -378,6 +409,9 @@ input[type="checkbox"] {
     opacity: 0
 }/* hides original checkbox */
 
+input[type="checkbox"] + label::after {
+    content: none;
+}
 input[type="checkbox"]:checked + label::after {
     content: "";
   }/*Unhide the checkmark by default*/
@@ -403,6 +437,13 @@ input[type="checkbox"]:focus + label::before {
 }
 .contacts__details {
     width: 500px;
+}
+.contacts h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #011C40;
 }
 .contacts__details a {
     position: relative;
@@ -448,6 +489,9 @@ a[href^="tel:"]::before {
 /* .site-menu is styled in Header  */
 .social {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: baseline;

@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Круизы в Антарктику</title>
 </head>
 <body>
+    <h1 class="visually-hidden">Круизы в Антарктику</h1>
     <header class="main-header">
         <div class="container">
             <nav class="main-header__nav">
-                <a href="#" class="main-header__logo">
+                <a class="main-header__logo">
                   <img src="img/logo.svg" alt="Logo" width="70" height="38">  
                 </a>
                 <ul class="main-header__site-menu site-menu">
@@ -31,7 +32,7 @@
             </nav>
             <section class="intro">
                 <div class="container">
-                    <h1>Круизы в Антарктику</h1>
+                    <h2>Круизы в Антарктику</h2>
                     <p>Волшебный мир айсбергов и пингвинов</p>
                 </div>
             </section>
@@ -235,9 +236,9 @@
                                 <label for="phone" class="visually-hidden">Телефон</label>
                                 <input type="tel" id="phone" placeholder="89236889975" pattern="" required>
                                 <label for="email" class="visually-hidden">Электронная почта</label>
-                                <input type="email" id="email" placeholder="grishaewa.lera@gmail.com">
+                                <input type="email" id="email" placeholder="grishaewa.lera@gmail.com" required>
                                 <div class="booking-form__personal-data">
-                                   <input type="checkbox" id="pd" name="personal-data" value="process-personal-data" checked>
+                                   <input type="checkbox" id="pd" name="personal-data" value="process-personal-data" required checked>
                                    <label for="pd">Я согласен на обработку моих персональных данных</label>
                                 </div>
                                 <button type="submit" class="button">Оставить заявку</button>
