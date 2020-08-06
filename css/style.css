@@ -31,13 +31,8 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    color: #011c40;  
+    color: #011c40;
 }
-/*ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}*/
 
 .visually-hidden {
     position: absolute;
@@ -85,7 +80,6 @@ body {
     padding-top: 35px;
 }
 
-
 .site-menu {
     display: flex;
     margin: 0;
@@ -117,7 +111,7 @@ body {
     font-weight: bold;
     font-size: 54px;
     line-height: 66px;
-    color: #f9fbfd; 
+    color: #f9fbfd;
     text-align: center;
 }
 .intro p {
@@ -383,7 +377,7 @@ body {
     width: 18px;
     background-color: #ffffff;
   }
-   
+
 /*--- customized tick */
 .booking-form__personal-data label::after {
     content: "";
