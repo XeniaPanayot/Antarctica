@@ -352,6 +352,7 @@ body {
 
 /* Booking */
 .booking {
+  background-color: #daf1fd;
     background-image: url("../img/bg-4.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -510,8 +511,21 @@ body {
     justify-content: space-between;
 }
 .contacts__map {
+    position: relative;
     width: 560px;
 }
+
+.contacts__map::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 22px;
+    top: 211px;
+    left: 253px;
+    background-image: url("../img/pin-icon.svg");
+    background-repeat: no-repeat;
+}
+
 .contacts__details {
     width: 500px;
     padding-top: 75px;
