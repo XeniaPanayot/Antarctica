@@ -606,7 +606,6 @@ body {
     left: -18px;
 }
 
-
 .social__link:focus::before {
     outline:  rgb(59, 153, 252) auto 5px;
   } /*Adding  focus outline on the pseudoelement*/
