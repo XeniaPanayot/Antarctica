@@ -167,6 +167,7 @@ body {
 /* Advantages */
 .advantages {
     border-color: #e3ecf6;
+    background-color: #d8e5f4;
     background-image: url("../img/bg-2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,16 +286,23 @@ body {
 .gallery__description {
     position: absolute;
     top: 0;
+    min-height: 386px;
     width: 260px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #011c40;
     color: #f9fbfd;
     box-sizing: border-box;
-    padding: 30px 25px 15px 27px;
+    padding: 30px 25px 36px 27px;
     z-index: 2;
 
     display: none;
+}
+
+.gallery__description-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery__description h3 {
