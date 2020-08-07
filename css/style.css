@@ -110,7 +110,7 @@ body {
   text-decoration: underline;
 }
 .site-menu__item a:active {
-  font-weight: bold;
+  color: #daf1fd;
 }
 
 /* Intro */
@@ -338,11 +338,11 @@ body {
 
 .gallery__description .button:hover,
 .gallery__description .button:focus {
-    background-color: #d1d5de;
+    background-color: #e3ecf6;
 }
 
 .gallery__description .button:active {
-  background-color: #c2d4ef;
+  background-color: #daf1fd;
 }
 
 /* Text on:hover*/
@@ -440,10 +440,10 @@ body {
 }
 .booking-form .button:hover,
 .booking-form .button:focus {
-  background-color: #d1d5de;
+  background-color: #daf1fd;
 }
 .booking-form .button:active {
-  background-color: #c2d4ef;
+  background-color: #e3ecf6;
 }
 
 /* Checkbox */
@@ -577,14 +577,18 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .main-footer__nav {
     display: flex;
     align-items: center;
 }
+
 .main-footer__menu {
   margin-left: 42px;
 }
+
 /* .site-menu is styled in Header  */
+
 .social {
     display: flex;
     margin: 0;
@@ -593,6 +597,8 @@ body {
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-left: auto;
+    align-self: baseline;
+    padding-top: 10px;
 }
 .social__item {
     position: relative;
@@ -606,25 +612,28 @@ body {
     content: "";
     background-repeat: no-repeat;
 }
+
 .social__link--fb::before {
     background-image: url("../img/fb.svg");
     width: 11px;
     height: 20px;
-    top: -12px;
+    top: 0;
     left: -48px;
 }
+
 .social__link--insta::before {
     background-image: url("../img/insta.svg");
     width: 20px;
     height: 20px;
-    top: -12px;
+    top: 0;
     left: -37px;
 }
+
 .social__link--twitter::before {
     background-image: url("../img/twitter.svg");
     width: 20px;
     height: 16px;
-    top: -10px;
+    top: 0;
     left: -18px;
 }
 
@@ -638,12 +647,14 @@ body {
     width: 11px;
     height: 20px;
 }
+
 .social__link--insta:hover::before,
 .social__link--insta:active::before {
     background-image: url("../img/insta-gray.svg");
     width: 20px;
     height: 20px;
 }
+
 .social__link--twitter:hover::before,
 .social__link--twitter:active::before {
     background-image: url("../img/twitter-gray.svg");
