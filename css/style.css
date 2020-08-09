@@ -86,6 +86,7 @@ body {
 
 .site-menu {
     display: flex;
+    max-width: 90%;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -96,6 +97,9 @@ body {
 
 .site-menu__item {
     margin-right: 38px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .site-menu a {
