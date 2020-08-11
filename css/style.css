@@ -109,15 +109,16 @@ body {
     text-decoration: none;
     color: #f9fbfd;
 }
+.site-menu__item a:visited {
+  color: #8d00bf;
+}
+
 .site-menu__item a:hover,
 .site-menu__item a:focus {
   text-decoration: underline;
 }
 .site-menu__item a:active {
   color: #daf1fd;
-}
-.site-menu__item a:visited {
-  color: #8d00bf;
 }
 
 /* Intro */
