@@ -116,6 +116,9 @@ body {
 .site-menu__item a:active {
   color: #daf1fd;
 }
+.site-menu__item a:visited {
+  color: #8d00bf;
+}
 
 /* Intro */
 .intro {
