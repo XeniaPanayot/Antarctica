@@ -1,21 +1,21 @@
 /* Fonts */
 @font-face {
     font-weight: normal;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     src: local("Montserrat"), url("../fonts/montserrat-medium.woff2 ") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
     font-display: swap;
 }
 @font-face {
     font-weight: bold;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     src: local("Montserrat"), url("../fonts/montserrat-semibold.woff2 ") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
     font-display: swap;
 }
 @font-face {
     font-weight: lighter;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     src: local("Montserrat"), url("../fonts/montserrat-light.woff2 ") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
     font-display: swap;
