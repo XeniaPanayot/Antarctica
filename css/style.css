@@ -227,7 +227,6 @@ body {
 }
 .advantages__item::before {
     position: absolute;
-    top: 35px;
     content: "";
     background-repeat: no-repeat;
 }
@@ -235,16 +234,19 @@ body {
 .advantages__item--ship::before {
     width: 27px;
     height: 32px;
+    top: 31px;
     background-image: url("../img/ship-icon.svg");
 }
 .advantages__item--allincl::before {
     width: 38px;
     height: 21px;
+    top: 34px;
     background-image: url("../img/ticks-icon.svg");
 }
 .advantages__item--zodiac::before {
     width: 42px;
     height: 15px;
+    top: 38px;
     background-image: url("../img/zodiac-icon.svg");
 }
 
