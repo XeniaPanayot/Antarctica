@@ -294,7 +294,7 @@ body {
 .gallery__description {
     position: absolute;
     top: 0;
-    height: 386px;
+    height: 391px;
     width: 260px;
     display: flex;
     flex-direction: column;
@@ -302,8 +302,9 @@ body {
     background-color: #011c40;
     color: #f9fbfd;
     box-sizing: border-box;
-    padding: 30px 25px 35px 27px;
+    padding: 30px 25px 42px 27px;
     z-index: 2;
+    overflow: auto;
 
     display: none;
 }
