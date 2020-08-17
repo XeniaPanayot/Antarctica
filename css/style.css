@@ -296,19 +296,18 @@ body {
 .gallery__description {
     position: absolute;
     top: 0;
-    height: 391px;
+    height: 387px;
     width: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #011c40;
     color: #f9fbfd;
     box-sizing: border-box;
-    padding: 30px 25px 42px 27px;
+    padding: 30px 25px 20px 27px;
     z-index: 2;
     overflow: auto;
 
-    display: none;
+    /*display: none;*/
 }
 
 .gallery__description-wrapper {
@@ -344,7 +343,7 @@ body {
 }
 
 .gallery__description .button {
-  margin-top: auto;
+  margin-top: 14px;
 }
 
 .gallery__description .button:hover,
